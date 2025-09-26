@@ -18,11 +18,11 @@ const Body = () => {
   };
 
   return (
-    <div className="pb-10">
-      <div className="text-center mt-15">
+    <div className="pb-10 text-white bg-gradient-to-b from-blue-500">
+      <div className="text-center pt-24">
         <input
           ref={inputData}
-          className="border-2 w-[50%] h-15 rounded-lg pl-5 text-2xl"
+          className="bg-slate-800 border-2 border-slate-600 w-[50%] h-16 rounded-lg pl-5 text-2xl placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
           placeholder="Enter Certificate Number Here..."
           maxLength={12}
         />
@@ -30,14 +30,17 @@ const Body = () => {
         <div>
           <button
             onClick={searchResult}
-            className="mt-5 border-2 p-3 w-30 rounded-full"
+            className="mt-8 border-2 border-purple-600 bg-purple-600 p-3 w-40 rounded-full text-lg font-semibold hover:bg-purple-700 hover:border-purple-700 transition-colors"
           >
             Search
           </button>
         </div>
       </div>
       <div className="flex justify-center items-center mt-10">
-        <img className="" src={displayCertificate} />
+        <img
+          className="rounded-lg shadow-2xl shadow-black/50"
+          src={displayCertificate}
+        />
       </div>
     </div>
   );
