@@ -22,7 +22,7 @@ const Body = () => {
       <div className="text-center pt-24">
         <input
           ref={inputData}
-          className="bg-slate-800 border-2 border-slate-600 w-[50%] h-16 rounded-lg pl-5 text-2xl placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
+          className=" bg-slate-800 border-2 border-slate-600 w-[90%] sm:w-[50%] font-bold h-16 rounded-lg pl-5 text-xl sm:text-2xl placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
           placeholder="Enter Certificate Number Here..."
           maxLength={12}
         />
